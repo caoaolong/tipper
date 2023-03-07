@@ -1,0 +1,7 @@
+tip = "hello"
+
+api("/hello") = {
+    set(message, "Hello,World!")
+} => {
+    200 => text(message)
+}
