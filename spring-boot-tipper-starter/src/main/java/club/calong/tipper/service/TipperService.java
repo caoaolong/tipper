@@ -1,6 +1,9 @@
 package club.calong.tipper.service;
 
+import club.calong.tipper.domain.TipperRequest;
+import club.calong.tipper.domain.TipperResponse;
+
 public interface TipperService {
 
-    void parse(String name);
+    TipperResponse serve(TipperRequest request);
 }
