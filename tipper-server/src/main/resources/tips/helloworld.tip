@@ -1,7 +1,13 @@
-tip = "hello"
+// Module名称
+module = "hello"
+// Action名称
+action = "hello"
 
-api("/hello") => () {
+// 业务逻辑入口
+tipper("/hello") => (/* 请求参数 */) {
+    // 业务代码
     set(message, "Hello,World!")
 } => {
+    // 响应数据
     200 => text(message)
 }

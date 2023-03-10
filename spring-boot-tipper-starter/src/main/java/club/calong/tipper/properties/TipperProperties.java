@@ -20,4 +20,14 @@ public class TipperProperties {
     public void setBase(String base) {
         this.base = base;
     }
+
+    private String encoding;
+
+    public String getEncoding() {
+        return encoding;
+    }
+
+    public void setEncoding(String encoding) {
+        this.encoding = encoding;
+    }
 }
